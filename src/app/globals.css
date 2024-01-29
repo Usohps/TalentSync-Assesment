@@ -7,3 +7,14 @@
       @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full duration-200 h-[30px] min-w-[100px]
   }
 }
+
+@layer components{
+  .hero {
+    background-image: url("../../public/bg.png");
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

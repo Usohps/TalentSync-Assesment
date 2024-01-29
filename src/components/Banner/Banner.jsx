@@ -9,11 +9,13 @@ import marvelLogo from "@/assets/Group.png";
 import banner_img from "@/assets/Frame 25.png";
 import group_img from "@/assets/Contents.png"
 import Star from "@/assets/Stars.png"
+import Avater from "@/assets/Avatar.png"
+
 function Banner() {
   return (
     <>
       {/* Top Banner */}
-      <div className="container m-auto max-h-screen bg-white text-black pb-12 relative z-50 py-6 px-12 ">
+      <div data-aos="zoom-in" className="container m-auto max-h-screen text-black pb-12 hero relative z-50 py-6 px-12">
         <div className="container pt-24 m-auto">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div data-aos="zoom-in" className="p-4  space-y-3 xl:pr-36">
@@ -88,39 +90,37 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="container m-auto max-h-screen bg-white text-black pb-12 relative z-50 py-6 px-12 ">
+      <div className="container m-auto max-h-screen bg-[#D1E9FF] text-black pb-12 relative z-50 py-6 px-12 ">
         <div className="container pt-24 m-auto">
-          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-            <div>
-
-            </div>
-            <div data-aos="zoom-in" className="p-4  space-y-3 xl:pr-36">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+            
+            <div data-aos="zoom-in" className="p-4 container space-y-3 xl:pr-36">
+              <div className="space-y-4">
+              <Image src={shopifyLogo} alt="stars" /> 
+              <Image src={Star} alt="stars" /> 
+              </div>
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="capitalize text-2xl md:text-5xl"
+                className="capitalize text-lg md:text-xl"
               >
                 ClearLink has upgraded our remote meetings. High-quality video,
                 screen sharing, andtop-notch security make it essential for our
                 team.
               </h1>
-              <p data-aos="fade-up" data-aos-delay="500">
-                Experience the future of communication with ClearLink where
-                crystal-clear video conferencing meets unparalleled simplicity.
-              </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="600"
-                className="primary-button"
-              >
-                Start your free trial
-              </button>
+              <div className="flex container gap-3">
+              <Image src={Avater} alt="stars" className=" w-[35px] h-[35px]"/> 
+              <div>
+              <p className="text-gray-900">Sarah Thompson</p>
+              <span className="text-gray-600">Project Manager, Shopify</span>
+              </div>
             </div>
-            <div className="w-full flex justify-center items-center">
+            </div>
+            <div className="w-full md:w-[500px] flex justify-center items-center">
               <Image
                 data-aos="zoom-in"
                 src={group_img}
-                alt="mockup_videocall"
+                alt="people on a system"
                 className="rounded md:w-[400px] shadow-2xl"
               />
             </div>
