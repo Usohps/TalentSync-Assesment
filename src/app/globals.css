@@ -4,10 +4,12 @@
 
 @layer components{
   .primary-button{
-      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full duration-200 h-[30px] min-w-[100px]
+      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 w-full flex flex-col items-center justify-center rounded-full duration-200 md:max-w-[200px]
   }
 }
-
+body{
+  line-height: 35x;
+}
 @layer components{
   .hero {
     background-image: url("../../public/bg.png");

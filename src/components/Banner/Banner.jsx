@@ -7,15 +7,21 @@ import dropboxLogo from "@/assets/Dropbox svg.png";
 import intercomLogo from "@/assets/Intercom svg.png";
 import marvelLogo from "@/assets/Group.png";
 import banner_img from "@/assets/Frame 25.png";
-import group_img from "@/assets/Contents.png"
-import Star from "@/assets/Stars.png"
-import Avater from "@/assets/Avatar.png"
-
+import group_img from "@/assets/Contents.png";
+import Star from "@/assets/Stars.png";
+import Avater from "@/assets/Avatar.png";
+import { VscArrowLeft } from "react-icons/vsc";
+import { VscArrowRight } from "react-icons/vsc";
+import Frameicon from "@/assets/Frame.png";
+import Group from "@/assets/Avatargroup.png";
 function Banner() {
   return (
     <>
       {/* Top Banner */}
-      <div data-aos="zoom-in" className="container m-auto max-h-screen text-black pb-12 hero relative z-50 py-6 px-12">
+      <div
+        data-aos="zoom-in"
+        className="container m-auto max-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
+      >
         <div className="container pt-24 m-auto">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div data-aos="zoom-in" className="p-4  space-y-3 xl:pr-36">
@@ -30,13 +36,27 @@ function Banner() {
                 Experience the future of communication with ClearLink where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="600"
-                className="primary-button"
-              >
-                Start your free trial
-              </button>
+              <div className="flex items-center gap-10">
+                <button
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  className="primary-button"
+                >
+                  Start your free trial
+                </button>
+                <div className="flex items-center gap-1">
+                  <Image src={Frameicon} alt="icon" />
+                  <p>Discover AI assistant</p>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <Image src={Group} alt="icon" />
+
+                <div>
+                  <Image src={Frameicon} alt="icon" />
+                  <p>from 3,000+ reviews</p>
+                </div>
+              </div>
             </div>
             <div className="w-full flex justify-center items-center">
               <Image
@@ -93,11 +113,13 @@ function Banner() {
       <div className="container m-auto max-h-screen bg-[#D1E9FF] text-black pb-12 relative z-50 py-6 px-12 ">
         <div className="container pt-24 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-            
-            <div data-aos="zoom-in" className="p-4 container space-y-3 xl:pr-36">
+            <div
+              data-aos="zoom-in"
+              className="p-4 container space-y-3 xl:pr-36"
+            >
               <div className="space-y-4">
-              <Image src={shopifyLogo} alt="stars" /> 
-              <Image src={Star} alt="stars" /> 
+                <Image src={shopifyLogo} alt="stars" />
+                <Image src={Star} alt="stars" />
               </div>
               <h1
                 data-aos="fade-up"
@@ -109,12 +131,18 @@ function Banner() {
                 team.
               </h1>
               <div className="flex container gap-3">
-              <Image src={Avater} alt="stars" className=" w-[35px] h-[35px]"/> 
-              <div>
-              <p className="text-gray-900">Sarah Thompson</p>
-              <span className="text-gray-600">Project Manager, Shopify</span>
+                <Image
+                  src={Avater}
+                  alt="stars"
+                  className=" w-[35px] h-[35px]"
+                />
+                <div>
+                  <p className="text-gray-900">Sarah Thompson</p>
+                  <span className="text-gray-600">
+                    Project Manager, Shopify
+                  </span>
+                </div>
               </div>
-            </div>
             </div>
             <div className="w-full md:w-[500px] flex justify-center items-center">
               <Image
@@ -126,13 +154,22 @@ function Banner() {
             </div>
           </div>
         </div>
+        <div className=" w-[200px] m-auto p-4 flex items-center justify-between">
+          <button className="p-2 bg-white rounded-full">
+            <VscArrowLeft className="text-[#175CD3] md:text-2xl text-xl font-extrabold" />
+          </button>
+          <button className="p-2 rounded-full bg-white">
+            <VscArrowRight className="font-extrabold md:text-2xl text-xl text-[#175CD3]" />
+          </button>
+        </div>
       </div>
+
       {/* Section before footer */}
       <section className="max-h-screen">
         <div className="container m-auto bg-white mt-24  text-black pb-12 relative z-50 py-6 px-12 ">
           <div className="container m-auto">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center flex-col-reverse">
-              <div data-aos="zoom-in" className="p-4 border space-y-3 xl:pr-36">
+              <div data-aos="zoom-in" className="p-4 space-y-3 xl:pr-36">
                 <p data-aos="fade-up" className="text-sky-800 capitalize "></p>
                 <h3
                   data-aos="fade-up"
@@ -147,14 +184,14 @@ function Banner() {
                   <li>Access to all features</li>
                   <li>Personalized onboarding</li>
                 </ul>
-                <div className="flex py-3 items-center justify-between">
-                  <button className="border p-3 font-bold rounded-full">
+                <div className="flex flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-between">
+                  <button className="w-full border py-2 md:w-[200px] font-bold rounded-full">
                     Talk to sales
                   </button>
                   <button
                     data-aos="fade-up"
-                    data-aos-delay="600"
-                    className="primary-button"
+                    data-aos-delay="300"
+                    className="primary-button "
                   >
                     Start your free trial
                   </button>

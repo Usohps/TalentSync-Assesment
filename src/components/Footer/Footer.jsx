@@ -6,10 +6,10 @@ import storeLogo2 from "@/assets/Mobile app store badge.png"
 function Footer() {
   return (
     <div className="bg-white text-gray-800 ">
-      <section className="max-w-[1500px] mx-auto text-white">
-        <div className="grid md:grid-cols-3 py-5 border px-4 ">
+      <section className="max-w-[1500px] mx-auto px-4 text-white border border-red-400">
+        <div className="border px-4 flex flex-col justify-between md:flex-row ">
           {/* first col */}
-          <div className="py-8 px-4 space-y-4 ">
+          <div className="py-8 px-4 space-y-4 md:max-w-[400px] w-full ">
             <Image src={Logo} alt="logo" className="w-24 md:w-32" />
             <p className="text-gray-800">
               ClearLink is your gateway to effortless, high-quality video
@@ -17,7 +17,7 @@ function Footer() {
             </p>
           </div>
           {/* second col */}
-          <div className=" text-gray-800 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols col-span-2 md:pl-10">
+          <div className=" text-gray-800 md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between">
             <div>
               <div className="py-8 px-4 ">
                 <h1 className="text-xl font-bold mb-3">Product</h1>
@@ -106,50 +106,28 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="text-gray-800">
-              <div className="py-8 px-4 space-y-3 ">
-                <h1 className="text-xl font-bold mb-3">Get the App</h1>
-                <Image src={storeLogo} alt="playstore_logo"/>
+            <div className="text-gray-800 ">
+              <div className="py-8 px-4 space-y-3 border  flex-col flex items-center">
+                <h1 className="text-xl font-bold mb-3 text-center md:text-left">Get the App</h1>
+                <div>
+                <Image src={storeLogo} alt="playstore_logo"className="max-w-[400px] h-[60px]"/>
+                </div>
+                <div>
                 <Image src={storeLogo2} alt="playstore_logo"/>
-                {/* <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <HiLocationMarker />
-                    <p>CozyDev Abuja, Nigeria</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MdMessage />
-                    <p>usohps@gmail.com</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MdCall />
-                    <p>+2348062268744</p>
-                  </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
+        
         </div>
-        <div className="bg-[#F9FAFB] hidden sm:block">
+      </section>
+      <div className="bg-[#F9FAFB] hidden sm:block">
           <div className=" p-4  border-gray-400 md:flex justify-between items-center">
             <span className="text-sm text-gray-400">
               copyright &copy; 2024 by CozyDev
             </span>
-            {/* <div className="flex items-center gap-4 justify-center">
-              <a href="#">
-                <FaLinkedin />
-              </a>
-              <a href="#">
-                <FaXTwitter />
-              </a>
-              <a href="#">
-                <FaGithub />
-              </a>
-            </div> */}
           </div>
         </div>
-      </section>
-      {/* <hr className="" /> */}
-      {/* buttom section */}
     </div>
   );
 }
