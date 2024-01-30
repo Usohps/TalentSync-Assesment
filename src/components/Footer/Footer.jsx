@@ -6,8 +6,8 @@ import storeLogo2 from "@/assets/Mobile app store badge.png"
 function Footer() {
   return (
     <div className="bg-white text-gray-800 ">
-      <section className="max-w-[1500px] mx-auto px-4 text-white border border-red-400">
-        <div className="border px-4 flex flex-col justify-between md:flex-row ">
+      <section className="max-w-[1500px] mx-auto px-4 text-white">
+        <div className=" px-4 flex flex-col md:flex-row ">
           {/* first col */}
           <div className="py-8 px-4 space-y-4 md:max-w-[400px] w-full ">
             <Image src={Logo} alt="logo" className="w-24 md:w-32" />
@@ -17,7 +17,7 @@ function Footer() {
             </p>
           </div>
           {/* second col */}
-          <div className=" text-gray-800 md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between">
+          <div className=" text-gray-800  flex flex-col md:flex-row flex-wrap  justify-between">
             <div>
               <div className="py-8 px-4 ">
                 <h1 className="text-xl font-bold mb-3">Product</h1>

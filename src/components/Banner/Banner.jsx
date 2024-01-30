@@ -14,6 +14,11 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { VscArrowRight } from "react-icons/vsc";
 import Frameicon from "@/assets/Frame.png";
 import Group from "@/assets/Avatargroup.png";
+import check from "@/assets/check.png";
+import Accordion from "@/components/Accordion/index";
+import videoIcon from "@/assets/videorecorder.png";
+import rectangeImg from "@/assets/Rectanglepicture.png";
+import Svg from "@/assets/Hand-drawn-arrow.png";
 function Banner() {
   return (
     <>
@@ -22,7 +27,7 @@ function Banner() {
         data-aos="zoom-in"
         className="container m-auto max-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
       >
-        <div className="container pt-24 m-auto">
+        <div className="container pt-24 m-auto space-y-4">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div data-aos="zoom-in" className="p-4  space-y-3 xl:pr-36">
               <h1
@@ -36,7 +41,7 @@ function Banner() {
                 Experience the future of communication with ClearLink where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
-              <div className="flex items-center gap-10">
+              <div className="flex justify-between items-center flex-col md:flex-row gap-10">
                 <button
                   data-aos="fade-up"
                   data-aos-delay="600"
@@ -49,12 +54,19 @@ function Banner() {
                   <p>Discover AI assistant</p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row space-y-4 justify-between items-center">
                 <Image src={Group} alt="icon" />
 
                 <div>
-                  <Image src={Frameicon} alt="icon" />
-                  <p>from 3,000+ reviews</p>
+                  <span className="flex items-center gap-3">
+                    <Image src={Star} alt="rating" />
+                    5.0
+                  </span>
+
+                  <span className="flex items-center gap-3">
+                    <Image src={Frameicon} alt="icon" />
+                    from 3,000+ reviews
+                  </span>
                 </div>
               </div>
             </div>
@@ -69,7 +81,7 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="font-medium py-6 w-full text-center space-y-3 text-sm md:text-xl">
+      <div className="font-medium py-6 w-full text-center space-y-8 text-sm md:text-xl">
         <h4>
           Join 1,500+ companies already video conferencing the ClearLink way
         </h4>
@@ -110,6 +122,67 @@ function Banner() {
           </div>
         </div>
       </div>
+
+      <section className="container p-4 relative min-h-screen">
+        <div>
+          <p>The ClearLink Advantage</p>
+          <h1>Why choose ClearLink?</h1>
+          <p>
+            In a world where connection is everything, ClearLink takes the lead.
+            Our cutting-edge video conferencing app offers:
+          </p>
+        </div>
+        <div className="">
+          <div className="flex flex-col">
+            <div>
+              <Image src={videoIcon} alt="video recorder icon" />
+              <h1>Crystal-clear HD video</h1>
+              <p>
+                No more pixelation or blurriness just stunning, lifelike clarity
+                that brings your team closer in meetings.
+              </p>
+            </div>
+            <div>
+              <Image src={videoIcon} alt="video recorder icon" />
+              <h1>Crystal-clear HD video</h1>
+              <p>
+                No more pixelation or blurriness just stunning, lifelike clarity
+                that brings your team closer in meetings.
+              </p>
+            </div>
+          </div>
+          <div className="flex">
+            <div>
+              <Image src={videoIcon} alt="video recorder icon" />
+              <h1>Crystal-clear HD video</h1>
+              <p>
+                No more pixelation or blurriness just stunning, lifelike clarity
+                that brings your team closer in meetings.
+              </p>
+            </div>
+            <div>
+              <Image src={videoIcon} alt="video recorder icon" />
+              <h1>Crystal-clear HD video</h1>
+              <p>
+                No more pixelation or blurriness just stunning, lifelike clarity
+                that brings your team closer in meetings.
+              </p>
+            </div>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <Image
+              data-aos="zoom-in"
+              src={rectangeImg}
+              alt="mockup_videocall"
+              className="rounded md:w-[400px] shadow-2xl"
+            />
+          </div>
+        </div>
+        <div className="lg:block hidden absolute top-0 right-[20%]">
+          <Image src={Svg} alt="svg icon" className="w-32" />
+        </div>
+      </section>
+
       <div className="container m-auto max-h-screen bg-[#D1E9FF] text-black pb-12 relative z-50 py-6 px-12 ">
         <div className="container pt-24 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -163,7 +236,19 @@ function Banner() {
           </button>
         </div>
       </div>
-
+      {/* Accordion Section */}
+      <section className="container m-auto min-h-screen border flex justify-between">
+        <div>
+          <p>Support</p>
+          <h1>FAQs</h1>
+          <p>
+            Everything you need to know about the product and billing. Can’t
+            find the answer you’re looking for? Please chat to our friendly
+            team.
+          </p>
+        </div>
+        <Accordion />
+      </section>
       {/* Section before footer */}
       <section className="max-h-screen">
         <div className="container m-auto bg-white mt-24  text-black pb-12 relative z-50 py-6 px-12 ">
@@ -179,13 +264,25 @@ function Banner() {
                   Ready to clear the path to perfect communication?
                 </h3>
                 <ul data-aos="fade-up" data-aos-delay="500">
-                  <li>30 days free trial</li>
-                  <li>Cancel at any time</li>
-                  <li>Access to all features</li>
-                  <li>Personalized onboarding</li>
+                  <li className="flex items-center gap-3">
+                    <Image src={check} alt="check icon" />
+                    30 days free trial
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image src={check} alt="check icon" />
+                    Cancel at any time
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image src={check} alt="check icon" />
+                    Access to all features
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Image src={check} alt="check icon" />
+                    Personalized onboarding
+                  </li>
                 </ul>
                 <div className="flex flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-between">
-                  <button className="w-full border py-2 md:w-[200px] font-bold rounded-full">
+                  <button className="w-full duration-500 ease-in-out hover:animate-bounce hover:border-blue-500 focus:border-blue-500 border py-2 md:w-[200px] font-bold rounded-full">
                     Talk to sales
                   </button>
                   <button

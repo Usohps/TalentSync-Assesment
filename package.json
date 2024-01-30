@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/accordion": "^2.0.28",
     "aos": "^2.3.4",
     "next": "14.1.0",
     "react": "^18",
