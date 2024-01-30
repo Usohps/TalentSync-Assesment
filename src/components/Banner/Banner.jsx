@@ -17,9 +17,9 @@ import Group from "@/assets/Avatargroup.png";
 import check from "@/assets/check.png";
 import Accordion from "@/components/Accordion/index";
 import videoIcon from "@/assets/videorecorder.png";
-import recordingicon from "@/assets/recording-01.png"
-import keyicon from "@/assets/lock-unlocked-04.png"
-import calandaricon from "@/assets/calendar.png"
+import recordingicon from "@/assets/recording-01.png";
+import keyicon from "@/assets/lock-unlocked-04.png";
+import calandaricon from "@/assets/calendar.png";
 import rectangeImg from "@/assets/Rectanglepicture.png";
 import Svg from "@/assets/Hand-drawn-arrow.png";
 function Banner() {
@@ -28,15 +28,15 @@ function Banner() {
       {/* Top Banner */}
       <div
         data-aos="zoom-in"
-        className="container m-auto min-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
+        className="container border m-auto min-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
       >
-        <div className="container pt-24 m-auto space-y-4">
+        <div className="md:container pt-24 md:m-auto space-y-4">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-            <div data-aos="zoom-in" className="p-4  space-y-3 xl:pr-36">
+            <div data-aos="zoom-in" className="p-2  space-y-3">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="capitalize text-2xl md:text-5xl"
+                className="capitalize text-3xl md:text-5xl"
               >
                 Uniting the world,one video call at a time
               </h1>
@@ -83,65 +83,67 @@ function Banner() {
             </div>
           </div>
         </div>
-      <div className="font-medium w-full text-center space-y-8 text-sm md:text-xl">
-        <h4>
-          Join 1,500+ companies already video conferencing the ClearLink way
-        </h4>
-        <div className=" container m-auto flex flex-col md:flex-row items-center p-4 justify-center gap-4">
-          <div className="flex items-center justify-center gap-3">
-            <Image
-              data-aos="zoom-in"
-              src={shopifyLogo}
-              alt="mockup_videocall"
-              className="rounded min-w-[20px] shadow-2xl"
-            />
-            <Image
-              data-aos="zoom-in"
-              src={coinbaseLogo}
-              alt="mockup_videocall"
-              className="rounded min-w-[20px] shadow-2xl"
-            />
-          </div>
-          <div className="flex px-2 gap-3">
-            <Image
-              data-aos="zoom-in"
-              src={dropboxLogo}
-              alt="mockup_videocall"
-              className="rounded min-w-[20px] shadow-2xl"
-            />
-            <Image
-              data-aos="zoom-in"
-              src={intercomLogo}
-              alt="mockup_videocall"
-              className="rounded min-w-[20px] shadow-2xl"
-            />
-            <Image
-              data-aos="zoom-in"
-              src={marvelLogo}
-              alt="mockup_videocall"
-              className="rounded min-w-[20px] shadow-2xl"
-            />
+        <div className="p-4  pt-12 font-medium w-full text-center text-sm md:text-xl">
+          <h4 data-aos="zoom-in">
+            Join 1,500+ companies already video conferencing the ClearLink way
+          </h4>
+          <div className=" container m-auto flex flex-col md:flex-row items-center  justify-center gap-2">
+            <div className="flex space-x-2 items-center justify-center">
+              <Image
+                data-aos="zoom-in"
+                src={shopifyLogo}
+                alt="mockup_videocall"
+                className="rounded min-w-[20px] shadow-2xl"
+              />
+              <Image
+                data-aos="zoom-in"
+                src={coinbaseLogo}
+                alt="mockup_videocall"
+                className="rounded min-w-[20px] shadow-2xl"
+              />
+            </div>
+            <div className="flex px-2 space-x-4">
+              <Image
+                data-aos="zoom-in"
+                src={dropboxLogo}
+                alt="mockup_videocall"
+                className="rounded min-w-[20px] shadow-2xl"
+              />
+              <Image
+                data-aos="zoom-in"
+                src={intercomLogo}
+                alt="mockup_videocall"
+                className="rounded min-w-[20px] shadow-2xl"
+              />
+              <Image
+                data-aos="zoom-in"
+                src={marvelLogo}
+                alt="mockup_videocall"
+                className="rounded min-w-[20px] shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </div>
-      </div>
 
+      <div
+        data-aos="zoom-in"
+        className="lg:max-w-[400px] w-full  lg:text-left p-6 md:pl-12"
+      >
+        <p className="lg:text-left">The ClearLink Advantage</p>
+        <h1>Why choose ClearLink?</h1>
+        <p>
+          In a world where connection is everything, ClearLink takes the lead.
+          Our cutting-edge video conferencing app offers:
+        </p>
+      </div>
       <section className="container m-auto p-4 relative">
-        <div className="lg:max-w-[400px] w-full  lg:text-left p-4">
-          <p className="text-center lg:text-left">The ClearLink Advantage</p>
-          <h1>Why choose ClearLink?</h1>
-          <p>
-            In a world where connection is everything, ClearLink takes the lead.
-            Our cutting-edge video conferencing app offers:
-          </p>
-        </div>
         <div className="flex lg:flex-row flex-col items-center space-y-4 justify-between">
-          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] space-y-4 w-full flex-wrap">
+          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] space-y-4 w-full p-4 flex-wrap">
             <div className="flex flex-col md:flex-row">
-              <div>
+              <div data-aos="zoom-in" data-aos-delay="100">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
-
-                <Image src={videoIcon} alt="video recorder icon" />
+                  <Image src={videoIcon} alt="video recorder icon" />
                 </div>
                 <h1>Crystal-clear HD video</h1>
                 <p>
@@ -149,10 +151,9 @@ function Banner() {
                   clarity that brings your team closer in meetings.
                 </p>
               </div>
-              <div>
+              <div data-aos="zoom-in" data-aos-delay="100">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
-
-                <Image src={recordingicon} alt="video recorder icon" />
+                  <Image src={recordingicon} alt="video recorder icon" />
                 </div>
                 <h1>Crystal-clear HD video</h1>
                 <p>
@@ -162,10 +163,9 @@ function Banner() {
               </div>
             </div>
             <div className="flex flex-col md:flex-row">
-              <div>
+              <div data-aos="zoom-in" data-aos-delay="200">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
-
-                <Image src={calandaricon} alt="video recorder icon" />
+                  <Image src={calandaricon} alt="video recorder icon" />
                 </div>
                 <h1>Crystal-clear HD video</h1>
                 <p>
@@ -173,8 +173,10 @@ function Banner() {
                   clarity that brings your team closer in meetings.
                 </p>
               </div>
-              <div>
-                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full"><Image src={keyicon} alt="video recorder icon" /></div>
+              <div data-aos="zoom-in" data-aos-delay="200">
+                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
+                  <Image src={keyicon} alt="video recorder icon" />
+                </div>
                 <h1>Crystal-clear HD video</h1>
                 <p>
                   No more pixelation or blurriness just stunning, lifelike
@@ -197,27 +199,27 @@ function Banner() {
         </div>
       </section>
 
-      <div className="max-h-screen bg-[#D1E9FF] text-black  relative z-50">
-        <div className="container p-4 m-auto">
+      <div className=" bg-[#D1E9FF] text-black  relative z-50">
+        <div className="md:container p-4 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div
               data-aos="zoom-in"
-              className="p-4 container space-y-3 xl:pr-36"
+              className="p-4 container max-w-[400px] space-y-3 xl:pr-36"
             >
               <div className="space-y-4">
-                <Image src={shopifyLogo} alt="stars" />
+                <Image src={shopifyLogo} alt="stars" className="w-medium" />
                 <Image src={Star} alt="stars" />
               </div>
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="capitalize text-lg md:text-xl"
+                className="capitalize md:text-xl"
               >
                 ClearLink has upgraded our remote meetings. High-quality video,
                 screen sharing, andtop-notch security make it essential for our
                 team.
               </h1>
-              <div className="flex container gap-3">
+              <div className="flex  items-center container gap-3">
                 <Image
                   src={Avater}
                   alt="stars"
@@ -242,19 +244,19 @@ function Banner() {
           </div>
         </div>
         <div className=" w-[200px] m-auto p-4 flex items-center justify-between">
-          <button className="p-2 bg-white rounded-full">
-            <VscArrowLeft className="text-[#175CD3] md:text-2xl text-xl font-extrabold" />
+          <button className="p-2 bg-white hover:bg-[#175CD3] rounded-full">
+            <VscArrowLeft className="text-[#175CD3] hover:text-white md:text-2xl text-xl font-extrabold" />
           </button>
-          <button className="p-2 rounded-full bg-white">
-            <VscArrowRight className="font-extrabold md:text-2xl text-xl text-[#175CD3]" />
+          <button className="p-2 rounded-full hover:bg-[#175CD3] bg-white">
+            <VscArrowRight className="font-extrabold md:text-2xl  hover:text-white text-xl text-[#175CD3]" />
           </button>
         </div>
       </div>
       {/* Accordion Section */}
-      <section className="container m-auto gap-6 p-4 border flex lg:flex-row flex-col justify-between">
-        <div className="max-w-[400px] space-y-3 ">
-          <p>Support</p>
-          <h1>FAQs</h1>
+      <section className=" w-full md:container md:m-auto gap-6 p-4 border flex lg:flex-row flex-col justify-between">
+        <div className="p-4 max-w-[400px] space-y-3 ">
+          <p className="text-[#175CD3] text-sm">Support</p>
+          <h1 className="text-2xl font-bold">FAQs</h1>
           <p>
             Everything you need to know about the product and billing. Can’t
             find the answer you’re looking for? Please chat to our friendly
@@ -265,10 +267,10 @@ function Banner() {
       </section>
       {/* Section before footer */}
       <section>
-        <div className="container m-auto bg-white mt-24  text-black pb-12 relative z-50 py-6 px-12 ">
+        <div className="container m-auto bg-white  text-black pb-12 relative z-50 py-6 px-12 ">
           <div className="container m-auto">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center flex-col-reverse">
-              <div data-aos="zoom-in" className="p-4 space-y-3 xl:pr-36">
+              <div data-aos="zoom-in" className="p-4 space-y-3">
                 <p data-aos="fade-up" className="text-sky-800 capitalize "></p>
                 <h3
                   data-aos="fade-up"
@@ -295,7 +297,7 @@ function Banner() {
                     Personalized onboarding
                   </li>
                 </ul>
-                <div className="flex flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-between">
+                <div className="flex flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-around">
                   <button className="w-full duration-500 ease-in-out hover:animate-bounce hover:border-blue-500 focus:border-blue-500 border py-2 md:w-[200px] font-bold rounded-full">
                     Talk to sales
                   </button>
