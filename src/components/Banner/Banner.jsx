@@ -17,6 +17,9 @@ import Group from "@/assets/Avatargroup.png";
 import check from "@/assets/check.png";
 import Accordion from "@/components/Accordion/index";
 import videoIcon from "@/assets/videorecorder.png";
+import recordingicon from "@/assets/recording-01.png"
+import keyicon from "@/assets/lock-unlocked-04.png"
+import calandaricon from "@/assets/calendar.png"
 import rectangeImg from "@/assets/Rectanglepicture.png";
 import Svg from "@/assets/Hand-drawn-arrow.png";
 function Banner() {
@@ -25,7 +28,7 @@ function Banner() {
       {/* Top Banner */}
       <div
         data-aos="zoom-in"
-        className="container m-auto max-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
+        className="container m-auto min-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
       >
         <div className="container pt-24 m-auto space-y-4">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -41,7 +44,7 @@ function Banner() {
                 Experience the future of communication with ClearLink where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
-              <div className="flex justify-between items-center flex-col md:flex-row gap-10">
+              <div className="flex items-center flex-col md:flex-row gap-6">
                 <button
                   data-aos="fade-up"
                   data-aos-delay="600"
@@ -54,7 +57,7 @@ function Banner() {
                   <p>Discover AI assistant</p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row space-y-4 justify-between items-center">
+              <div className="flex flex-col md:flex-row space-y-4 gap-6 items-center">
                 <Image src={Group} alt="icon" />
 
                 <div>
@@ -75,29 +78,28 @@ function Banner() {
                 data-aos="zoom-in"
                 src={banner_img}
                 alt="mockup_videocall"
-                className="rounded md:w-[400px] shadow-2xl"
+                className="rounded md:w-[400px] w-[300px] shadow-2xl"
               />
             </div>
           </div>
         </div>
-      </div>
-      <div className="font-medium py-6 w-full text-center space-y-8 text-sm md:text-xl">
+      <div className="font-medium w-full text-center space-y-8 text-sm md:text-xl">
         <h4>
           Join 1,500+ companies already video conferencing the ClearLink way
         </h4>
-        <div className="flex  flex-col md:flex-row items-center px-4 justify-center gap-4">
+        <div className=" container m-auto flex flex-col md:flex-row items-center p-4 justify-center gap-4">
           <div className="flex items-center justify-center gap-3">
             <Image
               data-aos="zoom-in"
               src={shopifyLogo}
               alt="mockup_videocall"
-              className="rounded min-w-[60px] shadow-2xl"
+              className="rounded min-w-[20px] shadow-2xl"
             />
             <Image
               data-aos="zoom-in"
               src={coinbaseLogo}
               alt="mockup_videocall"
-              className="rounded min-w-[60px] shadow-2xl"
+              className="rounded min-w-[20px] shadow-2xl"
             />
           </div>
           <div className="flex px-2 gap-3">
@@ -105,68 +107,80 @@ function Banner() {
               data-aos="zoom-in"
               src={dropboxLogo}
               alt="mockup_videocall"
-              className="rounded min-w-[60px] shadow-2xl"
+              className="rounded min-w-[20px] shadow-2xl"
             />
             <Image
               data-aos="zoom-in"
               src={intercomLogo}
               alt="mockup_videocall"
-              className="rounded min-w-[60px] shadow-2xl"
+              className="rounded min-w-[20px] shadow-2xl"
             />
             <Image
               data-aos="zoom-in"
               src={marvelLogo}
               alt="mockup_videocall"
-              className="rounded min-w-[60px] shadow-2xl"
+              className="rounded min-w-[20px] shadow-2xl"
             />
           </div>
         </div>
       </div>
+      </div>
 
-      <section className="container p-4 relative min-h-screen">
-        <div>
-          <p>The ClearLink Advantage</p>
+      <section className="container m-auto p-4 relative">
+        <div className="lg:max-w-[400px] w-full  lg:text-left p-4">
+          <p className="text-center lg:text-left">The ClearLink Advantage</p>
           <h1>Why choose ClearLink?</h1>
           <p>
             In a world where connection is everything, ClearLink takes the lead.
             Our cutting-edge video conferencing app offers:
           </p>
         </div>
-        <div className="">
-          <div className="flex flex-col">
-            <div>
-              <Image src={videoIcon} alt="video recorder icon" />
-              <h1>Crystal-clear HD video</h1>
-              <p>
-                No more pixelation or blurriness just stunning, lifelike clarity
-                that brings your team closer in meetings.
-              </p>
+        <div className="flex lg:flex-row flex-col items-center space-y-4 justify-between">
+          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] space-y-4 w-full flex-wrap">
+            <div className="flex flex-col md:flex-row">
+              <div>
+                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
+
+                <Image src={videoIcon} alt="video recorder icon" />
+                </div>
+                <h1>Crystal-clear HD video</h1>
+                <p>
+                  No more pixelation or blurriness just stunning, lifelike
+                  clarity that brings your team closer in meetings.
+                </p>
+              </div>
+              <div>
+                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
+
+                <Image src={recordingicon} alt="video recorder icon" />
+                </div>
+                <h1>Crystal-clear HD video</h1>
+                <p>
+                  No more pixelation or blurriness just stunning, lifelike
+                  clarity that brings your team closer in meetings.
+                </p>
+              </div>
             </div>
-            <div>
-              <Image src={videoIcon} alt="video recorder icon" />
-              <h1>Crystal-clear HD video</h1>
-              <p>
-                No more pixelation or blurriness just stunning, lifelike clarity
-                that brings your team closer in meetings.
-              </p>
-            </div>
-          </div>
-          <div className="flex">
-            <div>
-              <Image src={videoIcon} alt="video recorder icon" />
-              <h1>Crystal-clear HD video</h1>
-              <p>
-                No more pixelation or blurriness just stunning, lifelike clarity
-                that brings your team closer in meetings.
-              </p>
-            </div>
-            <div>
-              <Image src={videoIcon} alt="video recorder icon" />
-              <h1>Crystal-clear HD video</h1>
-              <p>
-                No more pixelation or blurriness just stunning, lifelike clarity
-                that brings your team closer in meetings.
-              </p>
+            <div className="flex flex-col md:flex-row">
+              <div>
+                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
+
+                <Image src={calandaricon} alt="video recorder icon" />
+                </div>
+                <h1>Crystal-clear HD video</h1>
+                <p>
+                  No more pixelation or blurriness just stunning, lifelike
+                  clarity that brings your team closer in meetings.
+                </p>
+              </div>
+              <div>
+                <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full"><Image src={keyicon} alt="video recorder icon" /></div>
+                <h1>Crystal-clear HD video</h1>
+                <p>
+                  No more pixelation or blurriness just stunning, lifelike
+                  clarity that brings your team closer in meetings.
+                </p>
+              </div>
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
@@ -178,13 +192,13 @@ function Banner() {
             />
           </div>
         </div>
-        <div className="lg:block hidden absolute top-0 right-[20%]">
+        <div className="lg:block hidden absolute top-10 right-[20%]">
           <Image src={Svg} alt="svg icon" className="w-32" />
         </div>
       </section>
 
-      <div className="container m-auto max-h-screen bg-[#D1E9FF] text-black pb-12 relative z-50 py-6 px-12 ">
-        <div className="container pt-24 m-auto">
+      <div className="max-h-screen bg-[#D1E9FF] text-black  relative z-50">
+        <div className="container p-4 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div
               data-aos="zoom-in"
@@ -217,7 +231,7 @@ function Banner() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-[500px] flex justify-center items-center">
+            <div className="w-full border md:w-[500px] flex justify-center items-center">
               <Image
                 data-aos="zoom-in"
                 src={group_img}
@@ -237,8 +251,8 @@ function Banner() {
         </div>
       </div>
       {/* Accordion Section */}
-      <section className="container m-auto min-h-screen border flex justify-between">
-        <div>
+      <section className="container m-auto gap-6 p-4 border flex lg:flex-row flex-col justify-between">
+        <div className="max-w-[400px] space-y-3 ">
           <p>Support</p>
           <h1>FAQs</h1>
           <p>
@@ -250,7 +264,7 @@ function Banner() {
         <Accordion />
       </section>
       {/* Section before footer */}
-      <section className="max-h-screen">
+      <section>
         <div className="container m-auto bg-white mt-24  text-black pb-12 relative z-50 py-6 px-12 ">
           <div className="container m-auto">
             <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center flex-col-reverse">
