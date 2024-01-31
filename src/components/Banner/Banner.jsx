@@ -28,11 +28,11 @@ function Banner() {
       {/* Top Banner */}
       <div
         data-aos="zoom-in"
-        className="container border m-auto min-h-screen text-black pb-12 hero relative z-50 py-6 px-12"
+        className="container m-auto  text-black pb-12 hero relative z-50 py-6 px-12"
       >
-        <div className="md:container pt-24 md:m-auto space-y-4">
-          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-            <div data-aos="zoom-in" className="p-2  space-y-3">
+        <div className="md:container pt-20 border border-red-200 md:m-auto space-y-4">
+          <div className=" grid grid-cols-1 lg:grid-cols-2  items-center">
+            <div data-aos="zoom-in" className="p-2 border space-y-3">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -57,7 +57,7 @@ function Banner() {
                   <p>Discover AI assistant</p>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row space-y-4 gap-6 items-center">
+              <div className="flex flex-col  md:flex-row space-y-4 gap-6 items-center">
                 <Image src={Group} alt="icon" />
 
                 <div>
@@ -83,7 +83,7 @@ function Banner() {
             </div>
           </div>
         </div>
-        <div className="p-4  pt-12 font-medium w-full text-center text-sm md:text-xl">
+        <div className="p-4  flex items-center flex-col justify-center pt-6 space-y-6 font-medium w-full text-center text-sm md:text-xl">
           <h4 data-aos="zoom-in">
             Join 1,500+ companies already video conferencing the ClearLink way
           </h4>
@@ -93,13 +93,13 @@ function Banner() {
                 data-aos="zoom-in"
                 src={shopifyLogo}
                 alt="mockup_videocall"
-                className="rounded min-w-[20px] shadow-2xl"
+                className="rounded w-[70px] h-[20px] shadow-2xl"
               />
               <Image
                 data-aos="zoom-in"
                 src={coinbaseLogo}
                 alt="mockup_videocall"
-                className="rounded min-w-[20px] shadow-2xl"
+                className="rounded w-[70px] h-[20px] shadow-2xl"
               />
             </div>
             <div className="flex px-2 space-x-4">
@@ -107,40 +107,45 @@ function Banner() {
                 data-aos="zoom-in"
                 src={dropboxLogo}
                 alt="mockup_videocall"
-                className="rounded min-w-[20px] shadow-2xl"
+                className="rounded w-[70px] h-[20px] shadow-2xl"
               />
               <Image
                 data-aos="zoom-in"
                 src={intercomLogo}
                 alt="mockup_videocall"
-                className="rounded min-w-[20px] shadow-2xl"
+                className="rounded w-[70px] h-[20px] shadow-2xl"
               />
               <Image
                 data-aos="zoom-in"
                 src={marvelLogo}
                 alt="mockup_videocall"
-                className="rounded min-w-[20px] shadow-2xl"
+                className="rounded w-[70px] h-[20px] shadow-2xl"
               />
             </div>
           </div>
         </div>
       </div>
 
+      <div className="w-full flex relative ">
       <div
         data-aos="zoom-in"
-        className="lg:max-w-[400px] w-full  lg:text-left p-6 md:pl-12"
+        className="max-w-[600px]  lg:text-left px-8 md:pl-12 relative"
       >
-        <p className="lg:text-left">The ClearLink Advantage</p>
+        <p>The ClearLink Advantage</p>
         <h1>Why choose ClearLink?</h1>
         <p>
           In a world where connection is everything, ClearLink takes the lead.
           Our cutting-edge video conferencing app offers:
         </p>
       </div>
+      <div className="lg:block hidden absolute top-0 right-[20%]">
+          <Image src={Svg} alt="svg icon" className="w-32" />
+        </div>
+      </div>
       <section className="container m-auto p-4 relative">
         <div className="flex lg:flex-row flex-col items-center space-y-4 justify-between">
-          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] space-y-4 w-full p-4 flex-wrap">
-            <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] border space-y-4 w-full p-4 flex-wrap">
+            <div className="flex flex-col md:flex-row gap-4">
               <div data-aos="zoom-in" data-aos-delay="100">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
                   <Image src={videoIcon} alt="video recorder icon" />
@@ -193,9 +198,6 @@ function Banner() {
               className="rounded md:w-[400px] shadow-2xl"
             />
           </div>
-        </div>
-        <div className="lg:block hidden absolute top-10 right-[20%]">
-          <Image src={Svg} alt="svg icon" className="w-32" />
         </div>
       </section>
 

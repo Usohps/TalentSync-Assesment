@@ -7,9 +7,9 @@ function Footer() {
   return (
     <div className="bg-white text-gray-800 ">
       <section className="max-w-[1500px] mx-auto px-4 text-white">
-        <div className=" px-4 flex flex-col justify-around md:flex-wrap flex-nowrap md:flex-row ">
+        <div className=" px-4 flex flex-col justify-around md:flex-wrap flex-nowrap lg:flex-row ">
           {/* first col */}
-          <div className="py-8 px-4 space-y-4 md:max-w-[300px] w-full ">
+          <div className="py-8   space-y-4 md:8/12 w-full border ">
             <Image src={Logo} alt="logo" className="w-24 md:w-32" />
             <p className="text-gray-800">
               ClearLink is your gateway to effortless, high-quality video
@@ -17,7 +17,7 @@ function Footer() {
             </p>
           </div>
           {/* second col */}
-          <div className=" text-gray-800 w-full md:w-6/12 flex flex-wrap md:flex-nowrap md:flex-row  justify-between">
+          <div className="border  text-gray-800 w-full lg:w-6/12 flex flex-wrap md:flex-nowrap md:flex-row  justify-between">
             <div className="w-1/2 md:w-full">
               <div className="py-8 px-4 ">
                 <h1 className="text-xl font-bold mb-3">Product</h1>
@@ -106,30 +106,31 @@ function Footer() {
                 </ul>
               </div>
             </div>
-            
-          <div className="text-gray-800 ">
+
+          </div>
+            <div className="text-gray-800  border">
               <div className="py-8 space-y-3 flex-col flex items-center">
-                <h1 className=" text-sm font-bold mb-3 text-center md:text-left">Get the App</h1>
+                <h1 className=" text-sm font-bold mb-3 text-center md:text-left">
+                  Get the App
+                </h1>
                 <div>
-                <Image src={storeLogo} alt="playstore_logo"className=""/>
+                  <Image src={storeLogo} alt="playstore_logo" className="" />
                 </div>
                 <div>
-                <Image src={storeLogo2} alt="playstore_logo"/>
+                  <Image src={storeLogo2} alt="playstore_logo" />
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <div className="bg-[#F9FAFB] hidden sm:block">
-          <div className=" p-4  border-gray-400 md:flex justify-between items-center">
-            <span className="text-sm text-gray-400">
-              copyright &copy; 2024 by CozyDev
-            </span>
-          </div>
+        <div className=" p-4  border-gray-400 md:flex justify-between items-center">
+          <span className="text-sm text-gray-400">
+            copyright &copy; 2024 by CozyDev
+          </span>
         </div>
+      </div>
     </div>
-    
   );
 }
 
