@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="bg-white text-gray-800 ">
       <section className="max-w-[1500px] mx-auto px-4 text-white">
-        <div className=" px-4 flex flex-col justify-around md:flex-wrap flex-nowrap lg:flex-row ">
+        <div data-aos="fade-up" className=" px-4 md:px-8 flex flex-col justify-around md:flex-wrap flex-nowrap lg:flex-row ">
           {/* first col */}
           <div className="py-8   space-y-4 md:8/12 w-full ">
             <Image src={Logo} alt="logo" className="w-24 md:w-32" />

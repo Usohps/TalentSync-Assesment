@@ -10,7 +10,7 @@ function AccordionCard({ title, content}) {
   };
   return (
     <>
-      <div className="w-full mx-auto px-5">
+      <div data-aos="zoom-in" className="w-full mx-auto px-5">
         <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
           <div onClick={toggle} className="py-3 max-w-400px">
             <details className="group">
@@ -21,7 +21,7 @@ function AccordionCard({ title, content}) {
                 </span>
               </summary>
               {isOpen && (
-                <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                <p data-aos="zoom-in" className="text-neutral-600 mt-2 px-3 group-open:animate-fadeIn">
                   {content}
                 </p>
               )}

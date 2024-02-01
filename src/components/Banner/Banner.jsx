@@ -30,9 +30,9 @@ function Banner() {
         data-aos="zoom-in"
         className="container m-auto  text-black pb-12 hero relative z-50 py-6 px-12"
       >
-        <div className="md:container pt-20 border border-red-200 md:m-auto space-y-4">
+        <div className="md:container pt-24 md:m-auto space-y-4">
           <div className=" grid grid-cols-1 lg:grid-cols-2  items-center">
-            <div data-aos="zoom-in" className="p-2  border space-y-3">
+            <div data-aos="zoom-in" className="p-2 md:space-y-6 space-y-3">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -73,12 +73,12 @@ function Banner() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex md:justify-center md:items-center">
+            <div className="w-full flex justify-center items-center">
               <Image
                 data-aos="zoom-in"
                 src={banner_img}
                 alt="mockup_videocall"
-                className="rounded md:w-[400px] w-[300px] shadow-2xl"
+                className="rounded lg:w-full  shadow-2xl"
               />
             </div>
           </div>
@@ -126,10 +126,10 @@ function Banner() {
         </div>
       </div>
 
-      <div className="w-full flex relative ">
+      <div className="w-full flex items-center p-4 py-10 container m-auto relative ">
       <div
         data-aos="zoom-in"
-        className="max-w-[600px]  lg:text-left px-8 md:pl-12 relative"
+        className="max-w-[600px]  lg:text-left px-2 md:pl-12 relative"
       >
         <p>The ClearLink Advantage</p>
         <h1>Why choose ClearLink?</h1>
@@ -138,13 +138,13 @@ function Banner() {
           Our cutting-edge video conferencing app offers:
         </p>
       </div>
-      <div className="lg:block hidden absolute top-0 right-[20%]">
+      <div data-aos="zoom-in" className="lg:block hidden absolute bottom-0 right-[20%]">
           <Image src={Svg} alt="svg icon" className="w-32" />
         </div>
       </div>
       <section className="container m-auto p-4 relative">
-        <div className="flex lg:flex-row flex-col items-center space-y-4 justify-between">
-          <div className="flex flex-col items-center md:items-baseline lg:max-w-[500px] border space-y-4 w-full p-4 flex-wrap">
+        <div className="flex  lg:flex-row flex-col items-center space-y-4 justify-between">
+          <div className="flex flex-col items-center  border space-y-4 w-full px-4 flex-wrap">
             <div className="flex flex-col md:flex-row gap-4">
               <div data-aos="zoom-in" data-aos-delay="100">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
@@ -167,7 +167,7 @@ function Banner() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row gap-4">
               <div data-aos="zoom-in" data-aos-delay="200">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
                   <Image src={calandaricon} alt="video recorder icon" />
@@ -190,26 +190,26 @@ function Banner() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div className="md:w-1/2  w-full flex justify-center items-center">
             <Image
               data-aos="zoom-in"
               src={rectangeImg}
               alt="mockup_videocall"
-              className="rounded md:w-[400px] shadow-2xl"
+              className="rounded lg:w-[300px] w-full shadow-2xl"
             />
           </div>
         </div>
       </section>
 
-      <div className=" bg-[#D1E9FF] text-black  relative z-50">
+      <div className=" bg-[#D1E9FF] text-black py-10  relative z-50">
         <div className="md:container p-4 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div
               data-aos="zoom-in"
-              className="p-4 container max-w-[400px] space-y-3 xl:pr-36"
+              className="p-4 container  space-y-3 xl:pr-36"
             >
               <div className="space-y-4">
-                <Image src={shopifyLogo} alt="stars" className="w-medium" />
+                <Image src={shopifyLogo} alt="stars" className="w-[100px]" />
                 <Image src={Star} alt="stars" />
               </div>
               <h1
@@ -221,7 +221,7 @@ function Banner() {
                 screen sharing, andtop-notch security make it essential for our
                 team.
               </h1>
-              <div className="flex  items-center container gap-3">
+              <div className="flex  items-center container md:gap-3">
                 <Image
                   src={Avater}
                   alt="stars"
@@ -235,12 +235,12 @@ function Banner() {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-[500px] flex justify-center items-center">
+            <div className="w-full  flex justify-center items-center">
               <Image
                 data-aos="zoom-in"
                 src={group_img}
                 alt="people on a system"
-                className="rounded md:w-[400px] shadow-2xl"
+                className="rounded shadow-2xl md:w-[400px]"
               />
             </div>
           </div>
@@ -255,8 +255,8 @@ function Banner() {
         </div>
       </div>
       {/* Accordion Section */}
-      <section className=" w-full md:container md:m-auto gap-6 p-4 flex lg:flex-row flex-col justify-between">
-        <div className="p-4 max-w-[400px] space-y-3 ">
+      <section  className=" w-full md:container md:m-auto gap-6 p-4 flex lg:flex-row flex-col justify-between">
+        <div data-aos="zoom-in" className="p-4 max-w-[400px] space-y-3 ">
           <p className="text-[#175CD3] text-sm">Support</p>
           <h1 className="text-2xl font-bold">FAQs</h1>
           <p>
@@ -299,8 +299,9 @@ function Banner() {
                     Personalized onboarding
                   </li>
                 </ul>
-                <div className="flex flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-around">
-                  <button className="w-full duration-500 ease-in-out hover:animate-bounce hover:border-blue-500 focus:border-blue-500 border py-2 md:w-[200px] font-bold rounded-full">
+                <div className="flex  flex-col md:flex-row py-3 space-y-6 md:space-y-0 items-center justify-between">
+                  <button  data-aos="fade-up"
+                    data-aos-delay="300" className="w-full duration-500 ease-in-out hover:animate-bounce hover:border-blue-500 focus:border-blue-500 border py-2 md:w-[200px] font-bold rounded-full">
                     Talk to sales
                   </button>
                   <button

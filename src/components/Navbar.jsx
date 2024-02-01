@@ -91,9 +91,45 @@ function Navbar() {
       </div>
     {
           navbar && (
-            <div className="lg:hidden w-[80%] absolute top-0 right-0 min-h-screen bg-slate-100 animation backdrop-blur-sm  border border-red-500">
-              <div >
-
+            <div className="lg:hidden w-[100%] absolute top-0 right-0 min-h-screen  animation backdrop-blur-lg">
+              <div className="flex space-y-6  border h-screen bg-slate-100 flex-col justify-center items-center" >
+              <ul className="lg:flex items-center gap-3 text-lg text-bolder py-4 sm:py-0">
+            <li className="flex w-screen justify-between p-12 border gap-1 items-center">
+              <button>Products</button>
+              <span>
+                <GoChevronDown />
+              </span>
+            </li>
+            <li className="flex w-screen justify-between p-12 border gap-1 items-center">
+              <button>Solutions</button>
+              <span>
+                <GoChevronDown />
+              </span>
+            </li>
+            <li className="flex w-screen justify-between p-12 border gap-1 items-center">
+              <button>Resources</button>
+              <span>
+                <GoChevronDown />
+              </span>
+            </li>
+            <li className="w-screen  p-12 border ">
+              <button>
+                <a href="#">Pricing</a>
+              </button>
+            </li>
+          </ul>
+              <div className="space-y-10 ">
+            <div className="">
+              <button className="primary-button min-w-[350px] lg:block primary-button  bg-white text-2xl text-black">
+                Login
+              </button>
+            </div>
+            <div>
+              <button className="min-w-[350px] lg:block primary-button text-2xl ">
+                Sign up for free
+              </button>
+            </div>
+          </div>
               </div>
             </div>
           )
