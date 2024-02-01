@@ -3,6 +3,8 @@ import Logo from "@/assets/logo (2).png";
 import Image from "next/image";
 import storeLogo from "@/assets/Mobile app store badge (1).png";
 import storeLogo2 from "@/assets/Mobile app store badge.png";
+import { BsFacebook, BsLinkedin, BsGithub, BsYoutube, BsInstagram, BsTwitterX } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 function Footer() {
   return (
     <div className="bg-white text-gray-800 ">
@@ -124,10 +126,18 @@ function Footer() {
         </div>
       </section>
       <div className="bg-[#F9FAFB] hidden sm:block">
-        <div className=" p-4  border-gray-400 md:flex justify-between items-center">
+        <div className=" p-4 border-gray-400 md:flex justify-between items-center">
           <span className="text-sm text-gray-400">
             copyright &copy; 2024 by CozyDev
           </span>
+        <ul className="flex items-center  gap-4">
+          <li><a href="#"><BsFacebook/></a></li>
+          <li><a href="#"><BsLinkedin/></a></li>
+          <li><a href="#"><BsGithub/></a></li>
+          <li><a href="#"><BsYoutube/></a></li>
+          <li><a href="#"><BsInstagram/></a></li>
+          <li><a href="#"><BsTwitterX/></a></li>
+        </ul>
         </div>
       </div>
     </div>

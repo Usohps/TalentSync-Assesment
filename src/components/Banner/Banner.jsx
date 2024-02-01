@@ -44,7 +44,7 @@ function Banner() {
                 Experience the future of communication with ClearLink where
                 crystal-clear video conferencing meets unparalleled simplicity.
               </p>
-              <div className="flex items-center flex-col md:flex-row gap-6">
+              <div className="flex items-center flex-col md:flex-row gap-3">
                 <button
                   data-aos="fade-up"
                   data-aos-delay="600"
@@ -57,16 +57,16 @@ function Banner() {
                   <p>Discover AI assistant</p>
                 </div>
               </div>
-              <div className="flex flex-col  md:flex-row space-y-4 gap-6 items-center">
+              <div className="flex flex-col  md:flex-row space-y-4 md:space-y-0 gap-6 items-center">
                 <Image src={Group} alt="icon" />
 
-                <div>
-                  <span className="flex items-center gap-3">
+                <div className=" leading-none">
+                  <span className="flex items-center gap-1">
                     <Image src={Star} alt="rating" />
                     5.0
                   </span>
 
-                  <span className="flex items-center gap-3">
+                  <span className="flex items-center gap-1">
                     <Image src={Frameicon} alt="icon" />
                     from 3,000+ reviews
                   </span>
@@ -144,7 +144,7 @@ function Banner() {
       </div>
       <section className="container m-auto p-4 relative">
         <div className="flex  lg:flex-row flex-col items-center space-y-4 justify-between">
-          <div className="flex flex-col items-center  border space-y-4 w-full px-4 flex-wrap">
+          <div className="flex flex-col items-center space-y-4 w-full px-4 flex-wrap">
             <div className="flex flex-col md:flex-row gap-4">
               <div data-aos="zoom-in" data-aos-delay="100">
                 <div className="w-10 h-10 flex flex-col items-center justify-center bg-[#F9FAFB] rounded-full">
@@ -201,15 +201,15 @@ function Banner() {
         </div>
       </section>
 
-      <div className=" bg-[#D1E9FF] text-black py-10  relative z-50">
+      <div className=" bg-[#D1E9FF] text-black py-10  relative">
         <div className="md:container p-4 m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div
               data-aos="zoom-in"
-              className="p-4 container  space-y-3 xl:pr-36"
+              className="p-4 container  space-y-3 "
             >
               <div className="space-y-4">
-                <Image src={shopifyLogo} alt="stars" className="w-[100px]" />
+                <Image src={shopifyLogo} alt="stars" className="w-[100px] md:w-[150px]" />
                 <Image src={Star} alt="stars" />
               </div>
               <h1
@@ -227,7 +227,7 @@ function Banner() {
                   alt="stars"
                   className=" w-[35px] h-[35px]"
                 />
-                <div>
+                <div className="leading-6">
                   <p className="text-gray-900">Sarah Thompson</p>
                   <span className="text-gray-600">
                     Project Manager, Shopify
