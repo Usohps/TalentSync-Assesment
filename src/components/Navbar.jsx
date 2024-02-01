@@ -91,7 +91,7 @@ function Navbar() {
       </div>
     {
           navbar && (
-            <div className="lg:hidden w-[80%] absolute top-0 right-0 min-h-screen  backdrop-blur-sm  border border-red-500">
+            <div className="lg:hidden w-[80%] absolute top-0 right-0 min-h-screen bg-slate-100 animation backdrop-blur-sm  border border-red-500">
               <div >
 
               </div>

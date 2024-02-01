@@ -14,7 +14,7 @@ function AccordionCard({ title, content}) {
         <div className="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
           <div onClick={toggle} className="py-3 max-w-400px">
             <details className="group">
-              <summary className=" border space-x-3 flex justify-between items-center font-medium cursor-pointer list-none">
+              <summary className="  space-x-3 flex justify-between items-center font-medium cursor-pointer list-none">
                 <span>{title}</span>
                 <span className="transition group-open:rotate-180">
                   {!isOpen ? <GoPlus /> : <FiMinus />}

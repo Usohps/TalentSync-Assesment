@@ -32,7 +32,7 @@ function Banner() {
       >
         <div className="md:container pt-20 border border-red-200 md:m-auto space-y-4">
           <div className=" grid grid-cols-1 lg:grid-cols-2  items-center">
-            <div data-aos="zoom-in" className="p-2 border space-y-3">
+            <div data-aos="zoom-in" className="p-2  border space-y-3">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -73,7 +73,7 @@ function Banner() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full flex md:justify-center md:items-center">
               <Image
                 data-aos="zoom-in"
                 src={banner_img}
@@ -235,7 +235,7 @@ function Banner() {
                 </div>
               </div>
             </div>
-            <div className="w-full border md:w-[500px] flex justify-center items-center">
+            <div className="w-full md:w-[500px] flex justify-center items-center">
               <Image
                 data-aos="zoom-in"
                 src={group_img}
@@ -255,7 +255,7 @@ function Banner() {
         </div>
       </div>
       {/* Accordion Section */}
-      <section className=" w-full md:container md:m-auto gap-6 p-4 border flex lg:flex-row flex-col justify-between">
+      <section className=" w-full md:container md:m-auto gap-6 p-4 flex lg:flex-row flex-col justify-between">
         <div className="p-4 max-w-[400px] space-y-3 ">
           <p className="text-[#175CD3] text-sm">Support</p>
           <h1 className="text-2xl font-bold">FAQs</h1>

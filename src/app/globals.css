@@ -8,7 +8,10 @@
   }
 }
 body{
-  line-height: 35x;
+  line-height: 35px;
+}
+p{
+  font-size: large;
 }
 @layer components{
   .hero {

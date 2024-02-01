@@ -8,7 +8,7 @@ function AccordionItem() {
 
   //template with stlyes below
   return (
-    <div className="flex flex-col items-center border  md:min-w-[500px]">
+    <div className="flex flex-col items-center md:min-w-[500px]">
       {datas &&
         datas.map((data, index) => {
           return <AccordionCard key={index} title={data.title} content={data.content} />;
